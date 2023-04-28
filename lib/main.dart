@@ -114,7 +114,17 @@ class _ShoppingListState extends State<ShoppingList> {
           ),
         ),
 
-       
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            children:[
+              Expanded(child: TextField(
+                controller: _textController ,
+                decoration: const InputDecoration(labelText: 'Enter shopping item'),
+                ))
+            ]
+          ),
+          ),
 
 
         ],
